@@ -12,17 +12,21 @@ button { font:inherit; }
 .menu-button { display:none; border:0; background:transparent; padding:8px; }
 .language-toggle { padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:transparent; color:var(--green); font-size:13px; font-weight:700; cursor:pointer; }
 .language-toggle:hover { background:#f1f6f2; }
-.home,.page { max-width:1120px; min-height:calc(100vh - 150px); margin:0 auto; padding:110px 32px; }
+.home,.page { max-width:1120px; min-height:calc(100vh - 150px); margin:0 auto; padding:90px 32px 110px; }
 .home { display:flex; align-items:center; }
-.home-grid { width:100%; display:grid; grid-template-columns:.95fr 1.05fr; gap:100px; align-items:start; }
-.eyebrow { margin:0 0 22px; color:var(--green)!important; font-size:13px!important; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+.home-grid { width:100%; display:grid; grid-template-columns:.72fr 1.28fr; gap:110px; align-items:start; }
+.identity { text-align:center; }
+.eyebrow { margin:0 0 30px; color:var(--green)!important; font-size:13px!important; font-weight:700; letter-spacing:.1em; text-transform:uppercase; white-space:nowrap; }
 h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(60px,8vw,100px); font-weight:400; line-height:.98; letter-spacing:-.055em; }
-.identity-intro { display:grid; grid-template-columns:210px minmax(0,1fr); gap:32px; align-items:center; }
-.identity-intro h1 { font-size:clamp(42px,4.8vw,64px); }
-.profile-photo { width:210px; aspect-ratio:4/5; display:block; object-fit:cover; object-position:50% 48%; border:1px solid var(--line); }
-.role { margin:26px 0 0; color:var(--muted); font-size:18px; }
-.profile-links { display:flex; flex-wrap:wrap; gap:12px 20px; margin-top:28px; }
+.identity-intro { display:flex; flex-direction:column; align-items:center; gap:0; }
+.identity-intro h1 { margin-top:24px; font-family:Arial,Helvetica,sans-serif; font-size:clamp(34px,3.4vw,48px); font-weight:700; line-height:1.08; letter-spacing:-.035em; }
+.profile-photo { width:min(100%,280px); aspect-ratio:4/5; display:block; object-fit:cover; object-position:50% 48%; border:1px solid var(--line); }
+.role { margin:14px 0 0; color:var(--muted); font-size:17px; line-height:1.5; }
+.contact-email { display:block; margin-top:5px; color:var(--green); font-size:15px; line-height:1.5; }
+.contact-email:hover { text-decoration:underline; }
+.profile-links { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 20px; margin-top:24px; }
 .profile-links a { color:var(--green); font-size:14px; font-weight:700; }
+.biography { padding-top:43px; }
 .biography p,.page-heading p,.project p { color:var(--muted); font-size:17px; line-height:1.75; }
 .biography .lead { margin-top:30px; color:var(--ink); font-family:Georgia,"Times New Roman",serif; font-size:27px; line-height:1.5; }
 .biography .personal-intro { margin-top:0; color:var(--ink); }
@@ -50,11 +54,15 @@ h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(60px
   .menu-button span { width:24px; border-top:1px solid var(--ink); }
   .nav { display:none; position:absolute; top:64px; left:0; right:0; z-index:10; padding:24px 20px; background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line); flex-direction:column; }
   .nav.open { display:flex; }
-  .home,.page { min-height:auto; padding:70px 20px; }
-  .home-grid { grid-template-columns:1fr; gap:55px; }
-  .identity-intro { grid-template-columns:138px minmax(0,1fr); gap:20px; }
-  .identity-intro h1 { font-size:clamp(34px,10vw,48px); }
-  .profile-photo { width:138px; }
+  .home,.page { min-height:auto; padding:58px 20px 70px; }
+  .home-grid { grid-template-columns:1fr; gap:48px; }
+  .eyebrow { margin-bottom:24px; font-size:12px!important; white-space:normal; }
+  .identity-intro h1 { margin-top:20px; font-size:36px; }
+  .profile-photo { width:min(82vw,270px); }
+  .role { font-size:16px; }
+  .contact-email { font-size:14px; }
+  .profile-links { margin-top:22px; }
+  .biography { padding-top:0; text-align:left; }
   .page-heading { margin-bottom:50px; }
   .publication { grid-template-columns:54px 1fr; gap:16px; }
   .project { grid-template-columns:1fr; gap:12px; }
