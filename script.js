@@ -15,7 +15,10 @@
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     const textNodes = [];
     while (walker.nextNode()) textNodes.push(walker.currentNode);
-    textNodes.forEach((node) => { node.nodeValue = node.nodeValue.replaceAll(fromName, toName); });
+    textNodes.forEach((node) => {
+      if (node.parentElement?.closest("[data-preserve-name]")) return;
+      node.nodeValue = node.nodeValue.replaceAll(fromName, toName);
+    });
     if (toggle) {
       toggle.textContent = language === "en" ? "中文" : "EN";
       toggle.setAttribute("aria-label", language === "en" ? "切换到中文" : "Switch to English");
