@@ -4,6 +4,16 @@
   const menuButton = document.querySelector(".menu-button");
   const nav = document.querySelector(".nav");
 
+  // Show the full email address directly below the degree line.
+  const role = document.querySelector(".identity .role");
+  if (role && !document.querySelector(".contact-email")) {
+    const email = document.createElement("a");
+    email.className = "contact-email";
+    email.href = "mailto:xinyu.zhang@vanderbilt.edu";
+    email.textContent = "xinyu.zhang@vanderbilt.edu";
+    role.insertAdjacentElement("afterend", email);
+  }
+
   function applyLanguage(language) {
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
     document.querySelectorAll("[data-en][data-zh]").forEach((element) => {
