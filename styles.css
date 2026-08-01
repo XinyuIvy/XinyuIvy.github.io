@@ -30,7 +30,7 @@ h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(60px
 .biography { padding-top:46px; }
 .biography p { color:var(--ink); }
 .biography p,.page-heading p,.project p { font-size:17px; line-height:1.75; }
-.biography .lead { margin-top:0; font-family:Georgia,"Times New Roman",serif; font-size:18px; line-height:1.7; }
+.biography .lead { margin-top:0; }
 .biography .personal-intro { margin-top:0; }
 .inline-links { margin-top:34px; }
 .inline-links a,.page-heading a { color:var(--green); font-weight:700; }
