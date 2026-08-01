@@ -9,8 +9,8 @@
   <meta name="description" content="GitHub projects by Xinyu Zhang.">
   <title>Projects | Xinyu Zhang</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css?v=20260731b">
-  <script src="../script.js?v=20260731b" defer></script>
+  <link rel="stylesheet" href="../styles.css?v=20260801d">
+  <script src="../script.js?v=20260801d" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -18,8 +18,8 @@
     <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" aria-label="Main navigation">
       <a href="../" data-en="Home" data-zh="首页">Home</a>
-      <a href="/publications/?v=20260731b" data-en="Publications" data-zh="论文">Publications</a>
-      <a href="/projects/?v=20260731b" aria-current="page" data-en="Projects" data-zh="项目">Projects</a>
+      <a href="/publications/?v=20260801d" data-en="Publications" data-zh="论文">Publications</a>
+      <a href="/projects/?v=20260801d" aria-current="page" data-en="Projects" data-zh="项目">Projects</a>
       <button class="language-toggle" type="button" aria-label="切换到中文">中文</button>
     </nav>
   </header>
@@ -28,9 +28,15 @@
       <p class="eyebrow" data-en="Selected GitHub work" data-zh="GitHub 项目">Selected GitHub work</p>
       <h1 data-en="Projects" data-zh="项目">Projects</h1>
     </div>
-    <div class="projects-placeholder">
-      <p data-en="This page will feature selected projects from my GitHub. More details will be added soon." data-zh="此页面将用于展示我在 GitHub 上的精选项目，详细内容将于后续更新。">This page will feature selected projects from my GitHub. More details will be added soon.</p>
-    </div>
+    <article class="projects-placeholder">
+      <h2>
+        <a href="https://github.com/XinyuIvy/ai-usage-check" target="_blank" rel="noopener noreferrer">
+          AI Usage Dashboard — Cross-Device AI Quota Observability ↗
+        </a>
+      </h2>
+      <p data-en="I built a privacy-aware dashboard that consolidates quota usage, reset windows, and account status across multiple AI coding services. A Python REST service normalizes provider data for a responsive web dashboard, macOS menu-bar display, and iPhone widget, while caching, last-known-good fallbacks, and stale-state labels preserve useful status during partial failures. Credentials remain on the authenticated Mac, with read-only quota information delivered privately across devices."
+         data-zh="我开发了一个注重隐私的跨设备仪表板，用于整合多个 AI 编程服务的配额使用情况、重置时间和账户状态。Python REST 服务将不同服务商的数据标准化，并供响应式网页、macOS 菜单栏和 iPhone 小组件共同使用；缓存、最近一次有效结果和过期状态标记可在部分服务故障时保留可解释的信息。登录凭据始终保留在已认证的 Mac 上，跨设备仅私密传输只读的配额信息。">I built a privacy-aware dashboard that consolidates quota usage, reset windows, and account status across multiple AI coding services. A Python REST service normalizes provider data for a responsive web dashboard, macOS menu-bar display, and iPhone widget, while caching, last-known-good fallbacks, and stale-state labels preserve useful status during partial failures. Credentials remain on the authenticated Mac, with read-only quota information delivered privately across devices.</p>
+    </article>
   </main>
   <footer class="footer">© <span data-current-year></span> Xinyu Zhang</footer>
 </body>
