@@ -78,8 +78,10 @@ h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(60px
 .publication p { margin-top:6px; line-height:1.42; }
 .page-heading.publications-heading { margin-bottom:38px; }
 .inline-links { display:flex; flex-wrap:wrap; gap:12px 24px; }
-.projects-placeholder { max-width:720px; padding:28px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.projects-placeholder p { margin:0; color:var(--muted); font-size:17px; line-height:1.7; }
+.projects-placeholder { width:100%; max-width:960px; padding:28px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.projects-placeholder h2 { margin:0 0 22px; font-family:Georgia,"Times New Roman",serif; font-size:30px; font-weight:400; line-height:1.28; letter-spacing:-.025em; }
+.projects-placeholder h2 a:hover { color:var(--green); }
+.projects-placeholder p { margin:0; max-width:820px; color:var(--muted); font-size:17px; line-height:1.7; }
 @media (max-width:760px) {
   .publication { grid-template-columns:48px 1fr; gap:12px; padding:18px 0; }
   .publication h2 { font-size:18px; }
